@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:mobile_assessment_flutter/presentation/resources/app_scaffold.dart';
 import 'package:mobile_assessment_flutter/presentation/resources/dimension_manager.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/routes_manager.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/text&textbutton.dart';
+import 'package:mobile_assessment_flutter/presentation/views/register%20Personal/widgets/bottom_buttons.dart';
 
 import '../../resources/color_manager.dart';
 import '../../resources/font_manager.dart';
@@ -51,6 +55,25 @@ class RegistrationPersonalView extends StatelessWidget {
               height: getHeight(22.44),
             ),
             FormContainer(),
+            SizedBox(
+              height: getHeight(7),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: getWidth(67),
+              ),
+              child: TextAndTextButton(
+                text: 'Already have an account?',
+                textButtonTitle: 'Log In',
+                onPressed: () => Get.toNamed(
+                  RouteManager.goToLoginRoute(),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: getHeight(37),
+            ),
+            const BottomButton(),
           ],
         ),
       ),

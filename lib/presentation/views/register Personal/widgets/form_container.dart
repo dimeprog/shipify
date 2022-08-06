@@ -32,7 +32,7 @@ class FormContainer extends StatelessWidget {
           ),
           TextFieldContainer(
             controller: _emailController,
-            title: 'Email',
+            title: ' Your Email',
             validator: (val) {},
           ),
           SizedBox(
@@ -40,7 +40,7 @@ class FormContainer extends StatelessWidget {
           ),
           TextFieldContainer(
             controller: _phoneController,
-            title: 'Phone',
+            title: 'Phone Number',
             validator: (val) {},
           ),
           SizedBox(

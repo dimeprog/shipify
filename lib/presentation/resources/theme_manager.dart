@@ -18,6 +18,9 @@ ThemeData getApplicationTheme() {
       color: ColorManager.white,
       elevation: AppSize.s4,
       shadowColor: Colors.grey,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppSize.s20),
+      ),
     ),
     // ripple
     shadowColor: Colors.grey,
