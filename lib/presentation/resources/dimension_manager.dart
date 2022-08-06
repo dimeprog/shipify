@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-double getScreenHeight = Get.context!.size!.height;
+double getScreenHeight = Get.context!.height;
 double getScreenWidth = Get.context!.width;
 
 double getHeight(double convertHeight) {

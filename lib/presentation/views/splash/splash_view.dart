@@ -50,8 +50,9 @@ class _SplashViewState extends State<SplashView> {
         child: Center(
           child: Text(
             'Shipify',
-            style: getSemiBoldTextStyle(
+            style: TextStyle(
               color: ColorManager.lightBlue,
+              fontFamily: 'ConcertOne',
               fontSize: FontSizeManager.s75,
             ),
           ),

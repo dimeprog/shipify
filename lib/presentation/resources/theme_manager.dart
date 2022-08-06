@@ -12,7 +12,7 @@ ThemeData getApplicationTheme() {
 
     disabledColor: ColorManager.lightBlue,
     accentColor: ColorManager.lightBlue,
-    fontFamily: 'ConcertOne',
+    fontFamily: 'Poppins',
     // card view  theme
     cardTheme: CardTheme(
       color: ColorManager.white,

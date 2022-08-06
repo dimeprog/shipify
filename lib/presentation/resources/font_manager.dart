@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mobile_assessment_flutter/presentation/resources/dimension_manager.dart';
 
 class FontConstant {
-  static final String fontFamily = 'ConcertOne';
+  static final String fontFamilyLarge = 'ConcertOne';
+  static final String fontFamily = 'Poppins';
 }
 
 class FontWeightManager {
@@ -23,5 +24,7 @@ class FontSizeManager {
   static const double s18 = 18;
   static const double s19 = 19;
   static const double s20 = 20;
+  static const double s26_33 = 26.33;
+  static const double s38_4 = 38.4;
   static const double s75 = 75;
 }
