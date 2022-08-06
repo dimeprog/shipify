@@ -8,6 +8,7 @@ import '../../resources/color_manager.dart';
 import '../../resources/font_manager.dart';
 import '../../resources/style_manager.dart';
 import '../../resources/values_manager.dart';
+import 'widgets/form_container.dart';
 
 class RegistrationPersonalView extends StatelessWidget {
   @override
@@ -49,6 +50,7 @@ class RegistrationPersonalView extends StatelessWidget {
             SizedBox(
               height: getHeight(22.44),
             ),
+            FormContainer(),
           ],
         ),
       ),

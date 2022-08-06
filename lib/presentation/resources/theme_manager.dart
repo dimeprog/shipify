@@ -95,15 +95,19 @@ ThemeData getApplicationTheme() {
         fontSize: FontSizeManager.s12,
       ),
       border: OutlineInputBorder(
-        borderSide:
-            BorderSide(color: ColorManager.white, width: AppSize.s1_5),
+        borderSide: BorderSide(color: ColorManager.white, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(
           Radius.circular(AppSize.s17),
         ),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide:
-            BorderSide(color: ColorManager.lightBlue, width: AppSize.s1_5),
+        borderSide: BorderSide(color: ColorManager.white, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(
+          Radius.circular(AppSize.s17),
+        ),
+      ),
+      disabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.white, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(
           Radius.circular(AppSize.s17),
         ),
