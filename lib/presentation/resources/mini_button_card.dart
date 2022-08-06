@@ -12,31 +12,36 @@ class MiniButtonCard extends StatelessWidget {
   final String title;
   final Color textcolor;
   final Color backgroundColor;
+  final onPressed;
   const MiniButtonCard({
     Key? key,
     required this.title,
     required this.textcolor,
     required this.backgroundColor,
+    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: getHeight(63),
-      width: getWidth(136),
-      child: Card(
-          elevation: 1.5,
-          shape: Theme.of(context).cardTheme.shape,
-          color: backgroundColor,
-          child: Center(
-            child: Text(
-              title,
-              style: getMediumTextStyle(
-                color: textcolor,
-                fontSize: FontSizeManager.s24,
+    return GestureDetector(
+      onTap: onPressed,
+      child: SizedBox(
+        height: getHeight(63),
+        width: getWidth(136),
+        child: Card(
+            elevation: 1.5,
+            shape: Theme.of(context).cardTheme.shape,
+            color: backgroundColor,
+            child: Center(
+              child: Text(
+                title,
+                style: getMediumTextStyle(
+                  color: textcolor,
+                  fontSize: FontSizeManager.s24,
+                ),
               ),
-            ),
-          )),
+            )),
+      ),
     );
   }
 }

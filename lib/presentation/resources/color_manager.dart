@@ -9,6 +9,7 @@ class ColorManager {
   //  new colors
 
   static Color error = Colors.red;
+  static Color black = Colors.black;
   static Color onboardingtitleColor = HexColor.fromHex('#525252');
 }
 

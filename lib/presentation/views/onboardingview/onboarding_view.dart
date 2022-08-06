@@ -34,15 +34,20 @@ class OnBoardingView extends StatelessWidget {
         width: double.infinity,
         child: Column(
           children: [
-            Container(
-              width: getWidth(AppSize.s319_27),
-              height: getHeight(78),
-              child: Text(
-                'What kind of user are you?',
-                style: TextStyle(
-                  fontSize: getHeight(FontSizeManager.s26_33),
-                  color: ColorManager.textcolor,
-                  fontWeight: FontWeightManager.medium,
+            Padding(
+              padding:  EdgeInsets.only(
+                top: getHeight(84.33),
+              ),
+              child: Container(
+                width: getWidth(AppSize.s319_27),
+                height: getHeight(78),
+                child: Text(
+                  'What kind of user are you?',
+                  style: TextStyle(
+                    fontSize: getHeight(FontSizeManager.s26_33),
+                    color: ColorManager.textcolor,
+                    fontWeight: FontWeightManager.medium,
+                  ),
                 ),
               ),
             ),
