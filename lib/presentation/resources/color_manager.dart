@@ -8,7 +8,7 @@ class ColorManager {
 
   //  new colors
 
-  static Color error = HexColor.fromHex('#e61f34');
+  static Color error = Colors.red;
   static Color onboardingtitleColor = HexColor.fromHex('#525252');
 }
 

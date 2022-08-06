@@ -17,16 +17,6 @@ class OnBoardingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //     toolbarHeight: getHeight(46.27),
-      //     elevation: 0,
-      //     systemOverlayStyle: SystemUiOverlayStyle(
-      //       systemNavigationBarIconBrightness: Brightness.dark,
-      //       systemNavigationBarColor: Colors.black,
-      //       statusBarColor: ColorManager.primary,
-      //       statusBarIconBrightness: Brightness.dark,
-      //     )),
-
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(

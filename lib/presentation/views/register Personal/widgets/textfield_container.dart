@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/color_manager.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/font_manager.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/style_manager.dart';
+
+class TextFieldContainer extends StatelessWidget {
+  final String title;
+  final validator;
+  final controller;
+  final bool obsecureText;
+  TextFieldContainer({
+    Key? key,
+    required this.controller,
+    required this.title,
+    required this.validator,
+    this.obsecureText = false,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: [
+          Text(
+            title,
+            style: getRegularTextStyle(
+              color: ColorManager.textcolor,
+              fontSize: FontSizeManager.s16,
+            ),
+          ),
+          TextFormField(
+            obscureText: obsecureText,
+            controller: controller,
+            validator: validator,
+            decoration: InputDecoration(
+              border: Theme.of(context).inputDecorationTheme.border,
+              enabledBorder:
+                  Theme.of(context).inputDecorationTheme.enabledBorder,
+              focusedErrorBorder:
+                  Theme.of(context).inputDecorationTheme.focusedErrorBorder,
+              errorBorder: Theme.of(context).inputDecorationTheme.errorBorder,
+              focusedBorder:
+                  Theme.of(context).inputDecorationTheme.focusedBorder,
+              fillColor: ColorManager.white,
+              filled: true,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
