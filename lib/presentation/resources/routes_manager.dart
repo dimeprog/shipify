@@ -18,7 +18,7 @@ class RouteManager {
   static const String onLoginRoute = '/login';
   static const String onRegisterPersonalRoute = '/register_Personal';
   static const String onRegisterEcommerenceRoute = '/register_ecommerence';
-  static const String onRegisterSuccessRoute = '/register_ecommerence';
+  static const String onRegisterSuccessRoute = '/register_sucess';
   static const String onHomeRoute = '/home';
   static const String onVerificationGoingRoute = '/verification_going';
   static const String onVerificationRExpiredRoute = '/verification_Expired';

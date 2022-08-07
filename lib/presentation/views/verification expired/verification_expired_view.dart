@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/route_manager.dart';
 import 'package:mobile_assessment_flutter/presentation/resources/app_scaffold.dart';
+import 'package:mobile_assessment_flutter/presentation/resources/routes_manager.dart';
 import 'package:mobile_assessment_flutter/presentation/resources/values_manager.dart';
 import 'package:mobile_assessment_flutter/presentation/views/verification%20expired/widgets/otp_form.dart';
 
@@ -86,7 +88,8 @@ class VerificationExpiredView extends StatelessWidget {
                   height: getHeight(59),
                   width: getWidth(59),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () =>
+                        Get.toNamed(RouteManager.goToRegSuccesRoute()),
                     child: Icon(
                       Icons.arrow_forward,
                       color: ColorManager.white,
